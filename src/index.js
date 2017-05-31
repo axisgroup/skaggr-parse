@@ -1,6 +1,7 @@
 import parseAggr from "./parsers/aggr";
 import parseExplicit from "./parsers/explicit";
 import parseQualifier from "./parsers/qualifier";
+import parseSetExpression from "./parsers/set-expression";
 import parseSetComponent from "./parsers/set-component";
 import parseSetModifier from "./parsers/set-modifier";
 import parseSetField from "./parsers/set-field";
@@ -23,6 +24,9 @@ var skaggrParse = function(spec) {
             break;
         case "qualifier":
             value = parseQualifier(filledSpec, skaggrParse);
+            break;
+        case "set-expression":
+            value = parseSetExpression(filledSpec, skaggrParse);
             break;
         case "set-component":
             value = parseSetComponent(filledSpec, skaggrParse);

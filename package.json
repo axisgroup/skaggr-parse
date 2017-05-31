@@ -1,8 +1,8 @@
 {
   "name": "skaggr-parse",
-  "version": "0.0.3",
+  "version": "0.0.11",
   "description": "A JavaScript parser of skaggr JSON specs for Qlik expressions",
-  "main": "index.js",
+  "main": "dist/skaggr-parse.js",
   "scripts": {
     "build": "webpack",
     "watch": "webpack --watch"
@@ -23,7 +23,7 @@
   },
   "homepage": "https://github.com/axisgroup/skaggr-parse#readme",
   "dependencies": {
-    "skaggr-spec": "0.0.3"
+    "skaggr-spec": "0.0.5"
   },
   "devDependencies": {
     "babel-core": "^6.24.1",

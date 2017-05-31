@@ -5,7 +5,7 @@ export default function parseGroup(spec, parser) {
     // Add values
     if(spec.value.length > 0) {
         spec.value.forEach((value, i) => {
-            if(i > 0) values.splice(-1,0,` ${value.operator} `);
+            values.splice(-1,0,`${spec.operators[i]}`);
             values.splice(-1,0,parser(value));
         });
     }

@@ -14,11 +14,10 @@ export default function parseSetModifier(spec, parser) {
     // Add selections
     if(spec.selections.length > 0) {
         spec.selections.forEach((setSelection, i) => {
-            if(i > 0) str += ` ${setSelection.operator} `;
+            if(i > 0) str += ` ${spec.selectionOperators[i-1]} `;
             str += parser(setSelection);
         });
     }
     
-
     return str;
 }

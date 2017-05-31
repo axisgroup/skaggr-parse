@@ -6,6 +6,9 @@ export default function parseAggr(spec, parser) {
     str += spec.value + "(";
 
     // Add set
+    str += parser(spec.set);
+    
+    /*
     if(spec.set.length > 0) {
         str += "{";
         spec.set.forEach((setComponent, i) => {
@@ -14,6 +17,7 @@ export default function parseAggr(spec, parser) {
         });
         str +="} "
     }
+    */
     
     // Add qualifiers
     spec.qualifiers.forEach((qualifier, i) => {

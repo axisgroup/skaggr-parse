@@ -10,7 +10,6 @@ export default function parseSetComponent(spec, parser) {
         str += "<";
         var mods = [];
         spec.modifiers.forEach((setModifier, i) => {
-            if(i > 0) str += ` ${setModifier.operator} `;
             mods.push(parser(setModifier));
         });
         str += mods.join(", ") + ">";
