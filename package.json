@@ -1,6 +1,6 @@
 {
   "name": "skaggr-parse",
-  "version": "0.0.11",
+  "version": "0.0.13",
   "description": "A JavaScript parser of skaggr JSON specs for Qlik expressions",
   "main": "dist/skaggr-parse.js",
   "scripts": {
